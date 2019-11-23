@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sirawa.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f58a42"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="70dp"
+            android:background="#fff"
+            android:elevation="0dp"
+            android:orientation="vertical"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f58a42"
+                android:orientation="vertical"
+                android:scrollbarAlwaysDrawVerticalTrack="true">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="351dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#f58a42"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="40dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="50dp">
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/Email"
+                            android:inputType="textEmailAddress"
+                            android:src="@drawable/icon_user" />
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:hint="@string/Password"
+                            android:inputType="numberPassword"
+                            android:src="@drawable/icon_password" />
+
+                        <Button
+                            android:id="@+id/masuk"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="22dp"
+                            android:background="#fff"
+                            android:text="@string/Masuk"
+                            android:textAllCaps="false"
+                            android:textColor="#808000"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/Login"
+                    android:textColor="#fff"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
